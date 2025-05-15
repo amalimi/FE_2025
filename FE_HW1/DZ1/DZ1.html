@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HoYoSite</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="Untitled-2.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#top" class="logo">HoYoSite</a>
+    <nav class="menu">
+      <a href="#news">Новости</a>
+      <a href="#games">Игры</a>
+      <a href="#community">Сообщество</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section id="news" class="section">
+      <h2>Последние новости</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/news1.png" alt="Новость 1" />
+          <h3>Обновление 4.0</h3>
+          <p>Новое королевство и события уже доступны!</p>
+        </div>
+        <div class="card">
+          <img src="images/news2.png" alt="Новость 2" />
+          <h3>Ивент: Фестиваль света</h3>
+          <p>Участвуй и получи эксклюзивные награды.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="section">
+      <h2>Наши игры</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/gensh.jpeg" alt="Genshin Impact" />
+          <h3>Genshin Impact</h3>
+        </div>
+        <div class="card">
+          <img src="images/honk1.jpg" alt="Honkai Star Rail" />
+          <h3>Honkai: Star Rail</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="section">
+      <h2>Сообщество</h2>
+      <p>Обсуждения, гайды, косплей – будь частью мира HoYo!</p>
+    </section>
+
+    <section id="contact" class="section form-section">
+      <h2>Связаться с нами</h2>
+      <form>
+        <label for="date">Выберите дату:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="topic">Тема обращения:</label>
+        <input list="topics" id="topic" name="topic" placeholder="Выберите тему" />
+        <datalist id="topics">
+          <option value="Поддержка">
+          <option value="Сотрудничество">
+          <option value="Жалоба">
+        </datalist>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <a href="#top" class="up-button" title="Наверх">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+</body>
+</html>
