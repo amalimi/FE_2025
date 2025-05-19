@@ -1,83 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HoYoSite</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="Untitled-2.css" />
+  <meta charset="UTF-8">
+  <title>Heals Care</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Untitled-2.css">
 </head>
 <body>
 
-  <header class="navbar">
-    <a href="#top" class="logo">HoYoSite</a>
-    <nav class="menu">
-      <a href="#news">Новости</a>
-      <a href="#games">Игры</a>
-      <a href="#community">Сообщество</a>
+<header>
+  <div class="navbar">
+    <div class="logo-text">Heals Care</div>
+    <nav>
+      <a href="#home">Главная страница</a>
+      <a href="#about">О больнице</a>
+      <a href="#services">Сервисы</a>
       <a href="#contact">Контакты</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main id="top">
-    <section id="news" class="section">
-      <h2>Последние новости</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="images/news1.png" alt="Новость 1" />
-          <h3>Обновление 4.0</h3>
-          <p>Новое королевство и события уже доступны!</p>
-        </div>
-        <div class="card">
-          <img src="images/news2.png" alt="Новость 2" />
-          <h3>Ивент: Фестиваль света</h3>
-          <p>Участвуй и получи эксклюзивные награды.</p>
-        </div>
+<main>
+  <!-- Главная -->
+  <section id="home" class="home-section bg-home">
+    <div class="responsive-container">
+      <div class="text-block">
+        <h1>Добро пожаловать в Heals Care</h1>
+        <p>Heals Care — это современная медицинская клиника, сочетающая в себе инновационные технологии и заботу о каждом пациенте. Мы предлагаем широкий спектр медицинских услуг: от диагностики до полного восстановления.</p>
+        <p>Мы гордимся нашим коллективом профессионалов и комфортными условиями, в которых каждый чувствует себя в безопасности и под надёжной защитой.</p>
       </div>
-    </section>
-
-    <section id="games" class="section">
-      <h2>Наши игры</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="images/gensh.jpeg" alt="Genshin Impact" />
-          <h3>Genshin Impact</h3>
-        </div>
-        <div class="card">
-          <img src="images/honk1.jpg" alt="Honkai Star Rail" />
-          <h3>Honkai: Star Rail</h3>
-        </div>
+      <div class="image-block">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="community" class="section">
-      <h2>Сообщество</h2>
-      <p>Обсуждения, гайды, косплей – будь частью мира HoYo!</p>
-    </section>
+  <!-- О больнице -->
+  <section id="about" class="about-section bg-about">
+    <div class="responsive-container reverse">
+      <div class="image-block">
+      </div>
+      <div class="text-block">
+        <h2>О больнице</h2>
+        <p>Наша больница была основана с целью предоставлять медицинские услуги высочайшего качества. Мы используем новейшие технологии и строго следим за стандартами безопасности.</p>
+        <p>В Heals Care работают врачи с многолетним опытом, которые прошли обучение в ведущих медицинских учреждениях мира. Мы стремимся к постоянному развитию и обновлению оборудования для точной диагностики и успешного лечения.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section form-section">
-      <h2>Связаться с нами</h2>
-      <form>
-        <label for="date">Выберите дату:</label>
-        <input type="date" id="date" name="date" required />
+  <!-- Сервисы -->
+  <section id="services" class="services-section bg-services">
+    <h2>Наши сервисы</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-stethoscope"></i>
+        <h3>Терапия</h3>
+        <p>Диагностика и лечение заболеваний любой сложности.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-syringe"></i>
+        <h3>Хирургия</h3>
+        <p>Проведение малых и больших операций.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-tooth"></i>
+        <h3>Стоматология</h3>
+        <p>Красивая и здоровая улыбка.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-baby"></i>
+        <h3>Педиатрия</h3>
+        <p>Профессиональный уход за детьми с рождения.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-x-ray"></i>
+        <h3>Диагностика</h3>
+        <p>УЗИ, анализы, КТ, МРТ и многое другое.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-briefcase-medical"></i>
+        <h3>Экстренная помощь</h3>
+        <p>Круглосуточная помощь в неотложных ситуациях.</p>
+      </div>
+    </div>
+  </section>
 
-        <label for="topic">Тема обращения:</label>
-        <input list="topics" id="topic" name="topic" placeholder="Выберите тему" />
-        <datalist id="topics">
-          <option value="Поддержка">
-          <option value="Сотрудничество">
-          <option value="Жалоба">
-        </datalist>
+  <!-- Контакты -->
+  <section id="contact" class="bg-contact">
+    <h2>Связаться с нами</h2>
+    <form>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
 
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
-  </main>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-  <a href="#top" class="up-button" title="Наверх">
-    <i class="fas fa-arrow-up"></i>
-  </a>
+      <label for="date">Дата визита:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="department">Отделение:</label>
+      <input list="departments" id="department" name="department" required>
+      <datalist id="departments">
+        <option value="Терапия">
+        <option value="Стоматология">
+        <option value="Педиатрия">
+        <option value="Хирургия">
+      </datalist>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+</main>
 
 </body>
 </html>
